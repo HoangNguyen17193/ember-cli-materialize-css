@@ -1,6 +1,5 @@
 # ember-cli-materialize-css
-This is [an example](http://www.example.com/) inline link.
-Ember addon for using [Materialize](http://materializecss.com/) css library in Ember applications
+Ember Addon for using [Materialize](http://materializecss.com/) css library in Ember applications
 
 ## Main Features
 
