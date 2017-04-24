@@ -1,12 +1,13 @@
 {
-  "name": "ember-cli-materializecss",
+  "name": "ember-cli-materialize-css",
   "version": "0.0.1",
   "description": "Ember addon for using Materialize css library in Ember applications",
   "keywords": [
     "ember-addon",
-    "ember-materializecss",
+    "ember-materialize-css",
     "materialize in ember",
-    "materialize"
+    "materialize",
+    "ember material design"
   ],
   "license": "MIT",
   "author": "Hoang Nguyen",
