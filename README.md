@@ -3,8 +3,9 @@ Ember Addon for using [Materialize](http://materializecss.com/) css library in E
 
 ## Main Features
 
-* Wrapper all materialize component to ember component, using this scope for each component instead of using global Jquery access DOM.
+* Wrapper all materialize components to ember components, using this scope for each component instead of using global Jquery access DOM.
 * Import materialize framework into your application.
+* Materialize Ember Components are easy to extend and custom.
 
 ## Installation
 
