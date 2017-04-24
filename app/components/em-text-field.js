@@ -1,3 +1,3 @@
-import EMTextField from 'ember-cli-materializecss/components/em-text-field';
+import EMTextField from 'ember-cli-materialize-css/components/em-text-field';
 
 export default EMTextField;

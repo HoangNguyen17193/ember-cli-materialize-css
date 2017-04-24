@@ -2,5 +2,5 @@
 'use strict';
 
 module.exports = {
-  name: 'ember-materialize'
+  name: 'ember-cli-materialize-css'
 };
