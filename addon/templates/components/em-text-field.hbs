@@ -1,0 +1,19 @@
+<div class="input-field {{if classes classes}}" {{action 'toggleActive' on='click'}}>
+  {{#if icon}}
+    <i class="material-icons prefix {{if active 'active'}}">
+      {{icon}}
+    </i>
+  {{/if}}
+  {{input name=name type=type placeholder=placeholder value=value class=validateClass}}
+  {{#if label}}
+    {{#if errorMessage}}
+      <label class={{if active 'active'}} data-error={{errorMessage}}>
+        {{label}}
+      </label>
+    {{else}}
+      <label class={{if active 'active'}}>
+        {{label}}
+      </label>
+    {{/if}}
+  {{/if}}
+</div>

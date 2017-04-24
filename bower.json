@@ -1,0 +1,7 @@
+{
+  "name": "ember-materialize",
+  "dependencies": {
+    "jquery": "2.2.4",
+    "materialize": "^0.98.2"
+  }
+}
