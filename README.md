@@ -1,23 +1,46 @@
 # ember-cli-materialize-css
+This is [an example](http://www.example.com/) inline link.
+Ember addon for using [Materialize](http://materializecss.com/) css library in Ember applications
+
+## Main Features
+
+* Wrapper all materialize component to ember component, using this scope for each component instead of using global Jquery access DOM.
+* Import materialize framework into your application.
 
 ## Installation
 
-* `git clone https://github.com/HoangNguyen17193/ember-cli-materialize-css.git`
-* `cd ember-cli-materialize-css`
-* `npm install`
-* `bower install`
+````
+$ ember install ember-cli-materialize-css
+````
 
-## Running
+## Example
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+#### Text Field
 
-## Running Tests
+````
+      {{em-text-field
+        value=identification
+        label='Username'
+        classes='col s12 primary-input'
+        type='text'
+        icon='account_circle'}}
 
-* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
+      {{em-text-field
+        value=password
+        label='Password'
+        classes='col s12 primary-input'
+        type='password'
+        icon='lock'}}
+````
 
-## Building
+#### Check Box
 
-* `ember build`
+````
+      {{em-check-box
+        checked=false
+        label='Remember'
+        wrapperClass='primary-checkbox'
+        disabled=true}}
+````
+
+
