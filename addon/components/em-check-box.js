@@ -4,12 +4,12 @@ import layout from '../templates/components/em-check-box';
 export default Ember.Component.extend({
   layout,
   checked: false,
+  disabled: false,
   actions: {
     toggle() {
-      if (Ember.isNone(this.get('checked'))) {
-        this.set('checked', false);
+      if (!this.get('disabled')) {
+        this.toggleProperty('checked');
       }
-      this.toggleProperty('checked');
     }
   }
 });

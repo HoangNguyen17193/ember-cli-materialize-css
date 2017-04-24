@@ -1,10 +1,10 @@
 <div class="input-field {{if classes classes}}" {{action 'toggleActive' on='click'}}>
   {{#if icon}}
-    <i class="material-icons prefix {{if active 'active'}}">
+    <i class="material-icons prefix {{if active 'active'}} {{if disabled 'disabled'}}">
       {{icon}}
     </i>
   {{/if}}
-  {{input name=name type=type placeholder=placeholder value=value class=validateClass}}
+  {{input name=name type=type placeholder=placeholder value=value class=validateClass disabled=disabled}}
   {{#if label}}
     {{#if errorMessage}}
       <label class={{if active 'active'}} data-error={{errorMessage}}>

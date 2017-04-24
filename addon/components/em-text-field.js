@@ -7,6 +7,7 @@ export default Ember.Component.extend({
   layout,
   tagName: 'div',
   active: false,
+  disabled: false,
   validateClass: computed('isValidate', 'isValid', function () {
     const { isValidate, isValid } = this.getProperties('isValidate', 'isValid');
     if (isValidate) {
@@ -19,8 +20,10 @@ export default Ember.Component.extend({
   }),
   actions: {
     toggleActive() {
-      this.set('active', true);
-      this.$('input').focus();
+      if (!this.get('disabled')) {
+        this.set('active', true);
+        this.$('input').focus();
+      }
     }
   }
 });
