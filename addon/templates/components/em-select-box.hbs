@@ -1,0 +1,14 @@
+<div class="input-field {{if wrapperClass wrapperClass}}">
+  <select class={{if selectClass selectClass}} multiple={{multipleSelect}}
+    {{action 'onChange' on='change'}}>
+    {{#if placeholder}}
+      <option value="" disabled selected>{{placeholder}}</option>
+    {{/if}}
+    {{#each options as |option|}}
+      <option selected={{option.selected}} value={{option.key}}>{{option.name}}</option>
+    {{/each}}
+  </select>
+  {{#if label}}
+    <label>{{label}}</label>
+  {{/if}}
+</div>
