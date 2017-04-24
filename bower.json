@@ -1,7 +1,6 @@
 {
-  "name": "ember-materialize",
+  "name": "ember-cli-materialize-css",
   "dependencies": {
-    "jquery": "2.2.4",
     "materialize": "^0.98.2"
   }
 }

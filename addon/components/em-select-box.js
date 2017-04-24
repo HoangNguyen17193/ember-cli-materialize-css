@@ -7,7 +7,17 @@ export default Ember.Component.extend({
   multipleSelect: false,
   init() {
     this._super(...arguments);
+    this.setDefaultValue(this.get('value'), this.get('multipleSelect'));
     this.setData(this.get('value'), this.get('options'));
+  },
+  setDefaultValue(value, multipleSelect){
+    if (!value) {
+      if (multipleSelect) {
+        this.set('value', []);
+      } else {
+        this.set('value', '');
+      }
+    }
   },
   setData(value, options) {
     const multiple = this.get('multipleSelect');
