@@ -1,0 +1,8 @@
+<a class="waves-effect waves-light btn {{if flat 'btn-flat'}} {{customClass}} {{if disabled 'disabled'}}"
+  {{action "click" on="click"}}>
+  {{#if icon}}
+    <i class="{{icon}} {{iconPosition}} {{iconClass}}"></i>
+  {{/if}}
+  {{text}}
+  {{yield}}
+</a>
