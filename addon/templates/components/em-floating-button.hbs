@@ -1,0 +1,7 @@
+<a class="btn-floating waves-effect waves-light {{class}} {{if disabled 'disabled'}}"
+  {{action "click" on="click"}}>
+  {{#if icon}}
+    <i class="material-icons {{iconClass}}">{{icon}}</i>
+  {{/if}}
+  {{yield}}
+</a>
