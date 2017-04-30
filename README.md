@@ -12,6 +12,11 @@ Ember Addon for using [Materialize](http://materializecss.com/) css library (bas
 ````
 $ ember install ember-cli-materialize-css
 ````
+import google icons to index.html file
+
+````
+<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+````
 
 ## Example
 
@@ -74,7 +79,7 @@ $ ember install ember-cli-materialize-css
 ````
 When we select new options, the value will be changed.
 
-#### Button
+#### Buttons
 ````
       {{em-button
         text='my button'
@@ -85,5 +90,15 @@ When we select new options, the value will be changed.
         iconPosition='right'
         iconClass='custom-icon-class'
         flat=true}}
+
+    // floating button
+
+       {{em-floating-button
+         buttonClass='btn-large custom-button-class'
+         clickAction='test'
+         disabled = false
+         icon='send'
+         iconClass='custom-icon-class'}}
 ````
+
 
