@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import layout from '../../templates/components/buttons/em-button';
+import layout from '../templates/components/em-button';
 
 export default Ember.Component.extend({
   layout,

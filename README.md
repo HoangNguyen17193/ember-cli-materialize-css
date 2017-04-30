@@ -73,3 +73,17 @@ $ ember install ember-cli-materialize-css
 
 ````
 When we select new options, the value will be changed.
+
+#### Button
+````
+      {{em-button
+        text='my button'
+        clickAction='test'
+        disabled = false
+        class='custom-button-class'
+        icon='send'
+        iconPosition='right'
+        iconClass='custom-icon-class'
+        flat=true}}
+````
+
