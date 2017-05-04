@@ -100,5 +100,13 @@ When we select new options, the value will be changed.
          icon='send'
          iconClass='custom-icon-class'}}
 ````
+#### Loader
+
+````
+    // Indeterminate loader
+       {{em-indeterminate-loader
+         thumbClass='red'
+         trackClass='blue'}}
+````
 
 
