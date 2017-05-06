@@ -105,8 +105,21 @@ When we select new options, the value will be changed.
 ````
     // Indeterminate loader
        {{em-indeterminate-loader
-         thumbClass='red'
-         trackClass='blue'}}
+         backgroundClass='red'
+         statusClass='blue'}}
+
+    // Determinate loader
+       {{em-determinate-loader
+         backgroundClass='red'
+         statusClass='blue'
+         percent=50}}
+    // Customize background color, background size, status size, status color,...
+    // via backgroundClass and statusClass
+
+    // Circular loader
+       {{em-circular-loader
+         size='100'
+         color='blue'}}
 ````
 
 
