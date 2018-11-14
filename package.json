@@ -15,7 +15,10 @@
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HoangNguyen17193/ember-cli-materialize-css.git" 
+  },
   "scripts": {
     "build": "ember build",
     "start": "ember server",
